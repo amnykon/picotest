@@ -88,7 +88,7 @@ LICENCE - see bottom of file for licence information.
 #define ASSERT(cond)                                                          \
     do {                                                                      \
         if (!(cond)) {                                                        \
-            *err = #cond; *file = __FILE__, *line = __LINE__;                 \
+            *err = #cond; *file = __FILE__; *line = __LINE__;                 \
             return;                                                           \
         }                                                                     \
     } while (0)
